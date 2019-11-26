@@ -1,0 +1,9 @@
+Red
+HTML code:#892330
+RGB code:R: 137 G: 35 B: 48
+HSV:352.35° 74.45% 53.73%
+
+Yellow
+HTML code:#FDA806
+RGB code:R: 253 G: 168 B: 6
+HSV:39.35° 97.63% 99.22%
