@@ -1,0 +1,71 @@
+body {
+	background-color: #d9d9d9;
+}
+
+
+
+h1 {
+	margin: 0;
+	font-size: 30px;
+	color: #ffffff;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+h2 {
+	color: #ffffff;
+}
+
+#col-b.col-lg-2 {
+	background-color: #53A16D;
+}
+
+#col-c.col-lg-8 {
+	background-color: #C16B56;
+}
+
+#nav.row {
+	background-color: #343a40;
+	height: 55px;
+}
+
+.row {
+	padding-bottom: 5px;
+}
+
+#game-1.row {
+	height: 320px;
+}
+
+#game-2.row {
+	height: 320px;
+}
+
+#game-3.row {
+	height: 320px;
+}
+
+#game-4.row {
+	height: 320px;
+}
+
+#col-a1.col-lg-2.text-center {
+	background:url('../images/eSportsOverwatch.jpg') top center;
+	background-size: cover;
+}
+
+#col-a2.col-lg-2.text-center {
+	background:url('../images/eSportsCSGO.jpg') top center;
+	background-size: cover;
+}
+
+#col-a3.col-lg-2.text-center {
+	background:url('../images/eSportsSmash.jpg') top center;
+	background-size: cover;
+}
+
+#col-a4.col-lg-2.text-center {
+	background:url('../images/eSportsRocket.jpg') top center;
+	background-size: cover;
+}
