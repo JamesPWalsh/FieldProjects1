@@ -3,11 +3,11 @@
 }
 
 .left {
-  width: 25%;
+  width: 20%;
 }
 
 .right {
-  width: 75%;
+  width: 80%;
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -19,4 +19,5 @@
   display: block;
   width: 100%;
   height: auto;
+  padding: 10px;
 }
