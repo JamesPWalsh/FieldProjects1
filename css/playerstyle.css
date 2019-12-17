@@ -4,6 +4,7 @@
 
 .left {
   width: 20%;
+  background-color: #FAA41A;
 }
 
 .right {
@@ -21,3 +22,8 @@
   height: auto;
   padding: 10px;
 }
+
+.info {
+	padding: 10px;
+}
+
