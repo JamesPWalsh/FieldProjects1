@@ -36,7 +36,7 @@
 			<div class="column right">
 				<div class="strokeme">
 				<h2>Player Name</h2>
-				<h3>Bio: lorumipsum stuff and stuff and stuff and stuff and stuff and stuff and stuff and stuff and stuff and stuff and stuff</h3>
+				<h3>Bio: Film mogul Harvey Weinstein helped produce such acclaimed features as 'Pulp Fiction,' 'Good Will Hunting' and 'Shakespeare in Love.' He was fired from his studio in 2017 amid allegations of sexual harassment.</h3>
 				<h3>Game Stats</h3>
 				<h3>Player Ranking</h3>
 				</div>
