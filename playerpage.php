@@ -26,10 +26,10 @@
 			<div class="column left">
 				<img src="images/img_player.jpg" alt="Profile Picture" class="player-img">
 				<div class="info">
-					<h4>Username:</h4><label for="male">Username</label><br>
-					<h4>E-Mail:</h4><label for="male">player@stu.indianhills.edu</label><br>
-					<h4>Phone #:</h4><label for="male">555-8001</label><br>
-					<h4>Favorite Game:</h4><label for="male">Frogger</label><br>
+					<h4>Username:</h4><label for="username">Username</label><br>
+					<h4>E-Mail:</h4><label for="email">player@stu.indianhills.edu</label><br>
+					<h4>Phone #:</h4><label for="phone">555-8001</label><br>
+					<h4>Favorite Game:</h4><label for="favgame">Frogger</label><br>
 					<h4>Schedule</h4>
 				</div>
 			</div>
