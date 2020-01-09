@@ -81,18 +81,24 @@
 	border: white solid 2px;
 	background-color: #FAA41A;
   }
+
+.row{
+	height: 100%;
+}
   
 .column {
   float: left;
 }
 
 .left {
-  width: 20%;
+	height: 100%;
+  width: 25%;
   background-color: #FAA41A;
 }
 
 .right {
-  width: 80%;
+  height: 100%;
+  width: 75%;
   background-image: url('../images/img_playerbackground.jpg');
   background-repeat: no-repeat;
 }
@@ -113,7 +119,7 @@
 	padding: 10px;
 }
 
-.strokeme {
+.stroke {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
