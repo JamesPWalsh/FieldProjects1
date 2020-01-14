@@ -77,10 +77,7 @@
 				<?php include "php/players.php"; ?>
 			</div>
 			<div id="col-c" class="col-lg-8">
-				<h1><?php echo $search ?></h1>
-				<p>  Described as a "hero shooter," (team-based multiplayer first-person shooter), Overwatch assigns players into two teams of six, with each player selecting from a roster of over 30 characters, known as "heroes," each with a unique style of play that is divided into three general roles that fit their purpose. Players on a team work together to secure and defend control points on a map or escort a payload across the map in a limited amount of time. Players gain cosmetic rewards that do not affect gameplay, such as character skins and victory poses, as they play the game. The game was initially launched with only casual play, but a competitive ranked mode, various 'arcade' game modes, and a player-customizable server browser were added after release. Additionally, Blizzard has added new characters, maps, and game modes post-release, all free of charge, with the only additional cost to players being optional loot boxes to earn cosmetic items </p>
-				<p>  Developer: <i> Blizzard Entertainment </i></p>
-				<p>  Publisher: <i> Blizzard Entertainment </i></p>
+				<?php include "php/gameData.php"; ?>
 			</div>
 		</div>
 	</div>
