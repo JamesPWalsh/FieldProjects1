@@ -49,7 +49,7 @@ input[type=submit]:hover {
 /* --- Sign in Content Formatting ---------------------------------------------------------------------------------------------*/
 
   header, footer {
-    background: yellowgreen;
+    background: #840029;
     height: 60px;
   }
   
@@ -109,6 +109,6 @@ input[type=submit]:hover {
 	color: black;
 	font-size: 17px;
 	border: white solid 2px;
-	background-color: #64A41C;
+	background-color: #FAA41A;
   }
   
