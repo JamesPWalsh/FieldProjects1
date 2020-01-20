@@ -21,6 +21,22 @@
 				</ul>
 			</div><!--End of nav-bar-->
 		</header>
+		
+		<div class="row">
+			<div class="column left" style="background-color:#aaa;">
+				<h2>Column 1</h2>
+				<p>Some text..</p>
+			</div>
+			<div class="column middle">
+				<h2>Column 2</h2>
+				<p>Some text..</p>
+			</div>
+			<div class="column right" style="background-color:#ccc;">
+				<h2>Column 3</h2>
+				<p>Some text..</p>
+			</div>
+		</div>
+		
 		<footer>Footer - eSports Links and Info</footer>
 	</div>
 </body>
