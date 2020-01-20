@@ -4,7 +4,18 @@
 	if(isset($_GET['name']))
 	{
 		$search = htmlspecialchars($_GET["name"]);
-		
+		include "php/database.php";
+		// Create connection
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		// Check connection
+		if ($conn->connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
+
+		$sql = "SELECT * FROM players WHERE game_name = '".$search."'";
+		$result = $conn->query($sql);
+	} else {
+		$search = "Overwatch";
 		include "php/database.php";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
@@ -59,14 +70,13 @@
 			</div>
 		</div>
 	</nav>
+	
 	<center>
 	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
-	<button type="submit" name="name"	    id="btnShow" value="Overwatch">Overwatch</button>
-	<button type="submit" name="name"		id="btnShow" value="Smash">Smash</button>
-	<button type="submit" name="name"		id="btnShow" value="Rocket League">Rocket League</button>
-	<button type="submit" name="name"		id="btnShow" value="CSGO">CSGO</button>
+	<?php include "php/buttons.php" ?>
 	</form>
 	</center>
+	
 	<div class="container-fluid">
 	<img src="images/<?php echo $search?>.jpg" alt="">
 		<div id="container" class="row">
@@ -82,6 +92,8 @@
 			</div>
 		</div>
 	</div>
+	
+	
 	
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
