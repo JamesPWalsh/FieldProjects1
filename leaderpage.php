@@ -22,24 +22,30 @@
 			</div><!--End of nav-bar-->
 		</header>
 		
-		<div class="row">
-			<div class="column left">
+		<div class="col-container">
+			<div class="col-left">
 				<h2>Player Invites</h2>
 				<p>Choose Team: Invite Link</p>
+				<button class="invitebtn">Generate Invite Link</button>
+				<input type="text" name="invitecode" value="" readonly>
 			</div>
-			<div class="column middle">
+			<div class="col-middle">
 				<h2>Edit Info</h2>
 				<p>Choose Game/Player: Edit Info</p>
 			</div>
-			<div class="column right">
+			<div class="col-right">
 				<h2>Add/Delete Pages</h2>
-				<p>Add/Delete Players/Games</p>
+				<p>Delete Player/Game</p>
 				<select>
 					<option value="overwatch">Overwatch</option>
 					<option value="rocketleague">Rocket League</option>
 					<option value="csgo">CS:GO</option>
 					<option value="smashbro">Smash Bros.</option>
+					<option value="player">Player</option>
 				</select>
+				<br>
+				<p>Add Game</p>
+				
 			</div>
 		</div>
 		

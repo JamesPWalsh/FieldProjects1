@@ -93,32 +93,31 @@
   box-sizing: border-box;
 }
 
-/* Create three unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-    border-style: solid;
+.col-container {
+	display: table;
+	width: 100%;
+}
+
+.col-left{
+  display: table-cell;
+  padding: 16px;
+  width: 20%;
+  border-style: solid;
   border-width: thin;
 }
 
-.left {
-	width: 20%;
-display: table-cell;
-}
-
- .right {
+.col-middle{
+  display: table-cell;
+  padding: 16px;
   width: 40%;
-display: table-cell;
+  border-style: solid;
+  border-width: thin;
 }
 
-.middle {
+.col-right{
+  display: table-cell;
+  padding: 16px;
   width: 40%;
-display: table-cell;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  border-style: solid;
+  border-width: thin;
 }
