@@ -97,14 +97,23 @@
 .column {
   float: left;
   padding: 10px;
+    border-style: solid;
+  border-width: thin;
 }
 
-.left, .right {
-  width: 25%;
+.left {
+	width: 20%;
+display: table-cell;
+}
+
+ .right {
+  width: 40%;
+display: table-cell;
 }
 
 .middle {
-  width: 50%;
+  width: 40%;
+display: table-cell;
 }
 
 /* Clear floats after the columns */

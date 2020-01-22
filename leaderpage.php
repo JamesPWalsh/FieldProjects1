@@ -23,17 +23,23 @@
 		</header>
 		
 		<div class="row">
-			<div class="column left" style="background-color:#aaa;">
-				<h2>Column 1</h2>
-				<p>Some text..</p>
+			<div class="column left">
+				<h2>Player Invites</h2>
+				<p>Choose Team: Invite Link</p>
 			</div>
 			<div class="column middle">
-				<h2>Column 2</h2>
-				<p>Some text..</p>
+				<h2>Edit Info</h2>
+				<p>Choose Game/Player: Edit Info</p>
 			</div>
-			<div class="column right" style="background-color:#ccc;">
-				<h2>Column 3</h2>
-				<p>Some text..</p>
+			<div class="column right">
+				<h2>Add/Delete Pages</h2>
+				<p>Add/Delete Players/Games</p>
+				<select>
+					<option value="overwatch">Overwatch</option>
+					<option value="rocketleague">Rocket League</option>
+					<option value="csgo">CS:GO</option>
+					<option value="smashbro">Smash Bros.</option>
+				</select>
 			</div>
 		</div>
 		
