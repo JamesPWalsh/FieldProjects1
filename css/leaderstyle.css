@@ -30,6 +30,12 @@
   header, footer, article, nav {
     padding: 1em;
   }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
   
 /* --- Nav-Bar Formatting -----------------------------------------------------------------------------------------------------*/ 
   .team-logo {

@@ -56,7 +56,7 @@
 		</div>
 		
 		<div class="col-container">
-			<div class="col-left"  style="border-right: 2px solid black;  border-top: 2px solid black;">
+			<div class="col-left"  style="border-right: 2px solid black;  border-top: 2px solid black; border-bottom: 2px solid black;">
 				<h2>Edit Players</h2>
 				<select>
 					<option value="player">Player</option>
@@ -64,14 +64,14 @@
 				<button class="editplayerbtn">Edit Page</button>
 			</div>
 
-			<div class="col-middle"  style="border-right: 2px solid black; border-top: 2px solid black;">
+			<div class="col-middle"  style="border-right: 2px solid black; border-top: 2px solid black; border-bottom: 2px solid black;">
 				<h2>Add Pages</h2>
 				<p>Add Game</p>
 				<input type="text" name="newgamename" value="">
 				<button class="addgamebtn">Add New Game</button>
 			</div>
 
-			<div class="col-right">
+			<div class="col-right" style="border-bottom: 2px solid black;">
 			</div>			
 		</div>
 		
