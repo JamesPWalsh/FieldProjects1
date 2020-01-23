@@ -17,7 +17,7 @@
 					<li><a href="#">Events</a></li>
 					<li><a href="team-page.html">Teams</a></li>
 					<li><a href="about-page.html">About</a></li>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="index.php">Home</a></li>
 				</ul>
 			</div><!--End of nav-bar-->
 		</header>
