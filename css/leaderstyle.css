@@ -20,7 +20,6 @@
     flex-direction: row;
   }
   .content > article {
-	border: black solid 1px;			/* Used to show article size */
     flex: 4;
     min-height: 60vh;
   }
@@ -82,42 +81,31 @@
 	background-color: #FAA41A;
   }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
+/*Start of column formatting*/  
 * {
   box-sizing: border-box;
 }
 
 .col-container {
+	    table-layout: fixed;
 	display: table;
 	width: 100%;
+}
+
+.col-right{
+  display: table-cell;
+  padding: 16px;
+  width: 20%;
 }
 
 .col-left{
   display: table-cell;
   padding: 16px;
-  width: 20%;
-  border-style: solid;
-  border-width: thin;
+  width: 40%;
 }
 
 .col-middle{
   display: table-cell;
   padding: 16px;
   width: 40%;
-  border-style: solid;
-  border-width: thin;
-}
-
-.col-right{
-  display: table-cell;
-  padding: 16px;
-  width: 40%;
-  border-style: solid;
-  border-width: thin;
 }
