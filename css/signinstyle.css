@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 input[type=text], select, textarea {
@@ -25,7 +25,7 @@ input[type=password], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #840029;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -34,7 +34,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #FAA41A;
 }
 
 .container {
@@ -42,7 +42,7 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
   margin-top: 2%;
-  margin-left: 5%;  
+  margin-left: 5%;
   margin-right: 5%;
 }
 
@@ -52,7 +52,7 @@ input[type=submit]:hover {
     background: #840029;
     height: 60px;
   }
-  
+
   header, footer, article, nav {
     padding: 1em;
   }
@@ -61,28 +61,28 @@ input[type=submit]:hover {
 	  position: fixed;
 	  bottom:0;
 	  width: 100%;
-  }  
-/* --- Nav-Bar Formatting -----------------------------------------------------------------------------------------------------*/ 
+  }
+/* --- Nav-Bar Formatting -----------------------------------------------------------------------------------------------------*/
   .team-logo {
 	display: inline;
 	float: left;
 	width: auto;
   }
-  
+
   li a.active {
 	color: black;
 	font-size: 17px;
 	border: white solid 2px;
 	background-color: #64A41C;
 	}
-  
+
   #nav-bar ul{
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	text-align: center;
   }
-  
+
   #nav-bar li{
 	display: inline;
 	text-decoration: none;
@@ -90,7 +90,7 @@ input[type=submit]:hover {
 	padding-right: 7px;
 	float: right;
   }
-  
+
   li a {
 	font-size: 15px;
 	display: block;
@@ -99,16 +99,15 @@ input[type=submit]:hover {
 	text-decoration: none;
 	padding: 10px;
   }
-  
+
   #nav-bar a{
 	text-decoration: none;
 	text-align: center;
   }
-  
+
   #nav-bar a:hover {
 	color: black;
 	font-size: 17px;
 	border: white solid 2px;
 	background-color: #FAA41A;
   }
-  
