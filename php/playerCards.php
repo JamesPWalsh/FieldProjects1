@@ -16,7 +16,7 @@
 							<a href='#'><i class='fa fa-linkedin'></i></a>  
 							<a href='#'><i class='fa fa-facebook'></i></a> 
 						</div>";
-					 echo "<p><a href='playerpage.html'><button class='player-button'>View Profile</button></a></p>";
+					 					 echo "<p><form action='playerpage.php' method='get'><button type='submit' class='player-button' name='name' value='" . $row["name"] . "'>View Profile</button></form></p>";
 				echo "</div>";//End of card
 			} else {
 				echo "<div class='card'>";
@@ -30,7 +30,7 @@
 						<a href='#'><i class='fa fa-linkedin'></i></a>  
 						<a href='#'><i class='fa fa-facebook'></i></a> 
 					  </div>";
-					 echo "<p><a href='playerpage.html'><button class='player-button'>View Profile</button></a></p>";
+					 					 echo "<p><form action='playerpage.php' method='get'><button type='submit' class='player-button' name='name' value='" . $row["name"] . "'>View Profile</button></form></p>";
 				echo "</div>";//End of card
 			}
 			//End of if statement
