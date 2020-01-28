@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<div class="col-2">
+	<div class="col-2" align="center">
 		<header>
 			<div id = "nav-bar">
 				<img class = "team-logo" src="#" alt = "team-logo"/>
@@ -27,10 +27,11 @@
 		Game Description: <input type="text" name="email"><br>
 
 		<form action="leaderpage.php">
-			<input id="button1" type="submit" value="Confirm Edit" />
+			<input id="btnsubmit" type="submit" value="Confirm Edit" />
 		</form>
+		<br>
 		<form action="leaderpage.php">
-			<input id="button2" type="submit" value="Cancel" />
+			<input id="btncancel" type="submit" value="Cancel" />
 		</form>
 		
 		<footer>Footer - eSports Links and Info</footer>
