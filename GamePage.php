@@ -22,7 +22,8 @@
 	 <meta name="viewport" content="width=device-width, initial-
 	 scale=1">
 	 <link rel="stylesheet" href="css/bootstrap.min.css" />
-	 <link rel="stylesheet" href="css/gamepagestyle.css" />
+	 <link rel="stylesheet" href="php/gamepagestyle.php" />
+	 
  </head>
  
  <body>
@@ -69,8 +70,8 @@
 	</center>
 	<div class="container-fluid">
 		<div id="container" class="row">
-			<div id="col-a1" class="col-lg-2 text-center">
-				
+			<div id="col-a1" class="col-lg-2 text-center" img src="images/<?php echo $search?>.jpg" alt="">
+				<img src="images/<?php echo $search?>.jpg" alt="">
 			</div>
 			<div id="col-b" class="col-lg-2">
 				<h1>Players</h1>
