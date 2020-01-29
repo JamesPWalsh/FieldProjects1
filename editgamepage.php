@@ -3,12 +3,12 @@
 <!-- James Walsh 01/16/2020 -->
 <!--Last Updated: 01/16/2020-->
 <head>
-<link rel="stylesheet" href="css/leaderstyle.css">
+<link rel="stylesheet" href="css/editgame.css">
 <title>IHCC ESports - Leader Page</title>
 </head>
 
 <body>
-	<div class="col-2" align="center">
+	<div class="col-2">
 		<header>
 			<div id = "nav-bar">
 				<img class = "team-logo" src="#" alt = "team-logo"/>
