@@ -22,7 +22,8 @@
 	 <meta name="viewport" content="width=device-width, initial-
 	 scale=1">
 	 <link rel="stylesheet" href="css/bootstrap.min.css" />
-	 <link rel="stylesheet" href="css/gamepagestyle.css" />
+	 <link rel="stylesheet" href="php/gamepagestyle.php" />
+	 
  </head>
  
  <body>
@@ -59,28 +60,50 @@
 			</div>
 		</div>
 	</nav>
-	<center>
-	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
-	<button type="submit" name="name"	    id="btnShow" value="Overwatch">Overwatch</button>
-	<button type="submit" name="name"		id="btnShow" value="Smash">Smash</button>
-	<button type="submit" name="name"		id="btnShow" value="Rocket League">Rocket League</button>
-	<button type="submit" name="name"		id="btnShow" value="CSGO">CSGO</button>
-	</form>
-	</center>
-	<div class="container-fluid">
-		<div id="container" class="row">
-			<div id="col-a1" class="col-lg-2 text-center">
-				
-			</div>
-			<div id="col-b" class="col-lg-2">
-				<h1>Players</h1>
-				<?php include "php/players.php"; ?>
-			</div>
-			<div id="col-c" class="col-lg-8">
-				<?php include "php/gameData.php"; ?>
-			</div>
-		</div>
-	</div>
+	
+    <?php
+	
+	$gameSet = $conn->query("SELECT games.game_name AS gameName FROM games");
+	
+	//echo $result->num_rows;
+	
+	
+	while ($row = $gameSet->fetch_assoc()) {
+		
+		$game = $row['gameName'];
+		
+		
+		echo '<div class="container-fluid">';
+		echo '<div id="container" class="row">';
+		echo '<div id="col-a1" class="col-lg-2 text-center" img src="images/'.$game.'.jpg" alt="">';
+		echo '<img src="images/'.$game.'.jpg" alt="">';
+		echo '</div>';
+		echo '<div id="col-b" class="col-lg-2">';
+		echo '<h1>Players</h1>';
+		
+		$playerSet = $conn->query("SELECT players.name AS playerName FROM players WHERE players.game_name = '$game'");
+		
+		while ($playerRow = $playerSet->fetch_assoc()) {
+			echo $playerRow['playerName'].'<br/>';
+		}
+			
+		echo '</div>';
+		echo '<div id="col-c" class="col-lg-8">';
+		echo '<h1>'.$game.'</h1>';
+		
+		$infoSet = $conn->query("SELECT games.game_info AS gameInfo, games.developer AS developer, games.publisher AS publisher FROM games WHERE games.game_name = '$game'");
+		
+		while ($infoRow = $infoSet->fetch_assoc()) {
+			echo '<p>'.$infoRow['gameInfo'].'</p>';
+			echo '<p>Developer: '.$infoRow['developer'].'</p>';
+			echo '<p>Publisher: '.$infoRow['publisher'].'</p>';
+		}
+		
+		echo '</div>';
+		echo '</div>';
+		echo '</div>';
+	}
+	?>
 	
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
