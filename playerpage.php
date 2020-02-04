@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php 
+		//this gets the variable for the search.
 		$search = htmlspecialchars($_GET["name"]);
 		include "php/database.php";
 		// Create connection
@@ -36,7 +37,7 @@
 		</header>
 
 		<div class="row">
-			<?php include "php/playerData.php" ?>
+			<?php include "php/playerData.php" //this prints the data of a player from the tables. ?>
 		</div>
 
 		<footer>Footer - eSports Links and Info</footer>

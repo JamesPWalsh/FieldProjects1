@@ -14,6 +14,7 @@
 -->
 <html lang="en-US">
 <?php
+	//if reloaded, get variable, else set first in table
 	if(isset($_GET['name']))
 	{
 		$search = htmlspecialchars($_GET["name"]);
@@ -153,12 +154,12 @@
 		<!-- Team Profile Cards -->
 		<main class="content">
 			<article class="team-profile-container">
-				<h2 style="color:white;">Meet the Teams</h2>
+				<h2 style="color:white;">Meet the Leaders</h2>
 
 				<!--View Teams Members by Game Buttons-->
 				<div class = "team-list">
 				<!-- Team List with Player Profiles-->
-				<?php include "php/leaderCards.php"; ?>
+				<?php include "php/leaderCards.php"; //this prints just the leaders?>
 				</div><!--End of Team List-->
 			</article>
 		</main> <!-- End of Team Profile Cards -->

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <?php
+	//to summarise: if page has been reloaded, get the variable and search, else set default to first game.
 	if(isset($_GET['name']))
 	{
 		$search = htmlspecialchars($_GET["name"]);
-		include "php/database.php";
+		include "php/database.php";//get login data for sql.
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
 		// Check connection
@@ -41,7 +42,7 @@
  
  <body>
 	<header>
-			<div id = "nav-bar">
+			<div id = "nav-bar"><!--Begining of nav-bar-->
 				<img class = "team-logo" src="#" alt = "team-logo"/>
 				<ul id="nav-bar-links">
 					<li><a href="#">Blog</a></li>
@@ -54,8 +55,9 @@
 		</header>
  
 	<center>
+	<!--This form reloads the page, as well as stores the choosen game in the url.-->
 	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
-	<?php include "php/buttons.php" ?>
+	<?php include "php/buttons.php" ?><!--This php is a loop that will make buttons for every game stored.-->
 	</form>
 	</center>
 	
@@ -67,10 +69,10 @@
 			</div>
 			<div id="col-b" class="col-lg-2">
 				<h1>Players</h1>
-				<?php include "php/players.php"; ?>
+				<?php include "php/players.php"; ?><!--This php will display all the players of the choosen game, displaying leaders and players alike.-->
 			</div>
 			<div id="col-c" class="col-lg-8">
-				<?php include "php/gameData.php"; ?>
+				<?php include "php/gameData.php"; ?><!--This php will print out everything about the game.-->
 			</div>
 		</div>
 	</div>

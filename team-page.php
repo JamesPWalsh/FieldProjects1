@@ -2,6 +2,7 @@
 <!-- Main Page for eSports Project -->
 <html lang="en-US">
 <?php
+	//if reloaded, get variable, else set first in table
 	if(isset($_GET['name']))
 	{
 		$search = htmlspecialchars($_GET["name"]);
