@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <!-- James Walsh 11/26/2019 -->
-<!--Last Updated: 01/06/2020-->
+<!--Last Updated: 01/16/2020-->
 <head>
 <link rel="stylesheet" href="css/playerstyle.css">
 <title>IHCC ESports - Player Info</title>
