@@ -10,7 +10,7 @@
 <body>
 	<div class="col-2">
 		<header>
-			<div id = "nav-bar">
+			<div id = "nav-bar"><!--Beginging of nav-bar-->
 				<img class = "team-logo" src="#" alt = "team-logo"/>
 				<ul id="nav-bar-links">
 					<li><a href="#">Blog</a></li>
@@ -22,7 +22,7 @@
 			</div><!--End of nav-bar-->
 		</header>
 		
-		<div class="col-container">
+		<div class="col-container"><!--Beginging of column-left-->
 			<div class="col-left"  style="border-right: 2px solid black;">
 				<h2>Edit Games</h2>
 				<select>
@@ -32,8 +32,8 @@
 					<option value="smashbro">Smash Bros.</option>
 				</select>
 				<button class="editgamebtn">Edit Page</button>
-			</div>
-			<div class="col-middle" style="border-right: 2px solid black;">
+			</div><!--End of column-left-->
+			<div class="col-middle" style="border-right: 2px solid black;"><!--Beginging of column-middle-->
 				<h2>Delete Pages</h2>
 				<p>Delete Player/Game</p>
 				<select>
@@ -45,31 +45,31 @@
 				</select>
 				<button class="deletebtn">Delete Page</button>
 				<br>
-			</div>			
+			</div><!--End of column-middle-->
 			
-			<div class="col-right">
+			<div class="col-right"><!--Beginging of column-right-->
 				<h2>Player Invites</h2>
 				<p>Choose Team: Invite Link</p>
 				<button class="invitebtn">Generate Invite Link</button>
 				<input style="width: 80px;" type="text" name="invitecode" value="" readonly>
-			</div>
+			</div><!--End of column-right-->
 		</div>
 		
 		<div class="col-container">
-			<div class="col-left"  style="border-right: 2px solid black;  border-top: 2px solid black; border-bottom: 2px solid black;">
+			<div class="col-left"  style="border-right: 2px solid black;  border-top: 2px solid black; border-bottom: 2px solid black;"><!--Beginging of column-left-->
 				<h2>Edit Players</h2>
 				<select>
 					<option value="player">Player</option>
 				</select>
 				<button class="editplayerbtn">Edit Page</button>
-			</div>
+			</div><!--End of column-left-->
 
-			<div class="col-middle"  style="border-right: 2px solid black; border-top: 2px solid black; border-bottom: 2px solid black;">
+			<div class="col-middle"  style="border-right: 2px solid black; border-top: 2px solid black; border-bottom: 2px solid black;"><!--Beginging of column-middle-->
 				<h2>Add Pages</h2>
 				<p>Add Game</p>
 				<input type="text" name="newgamename" value="">
 				<button class="addgamebtn">Add New Game</button>
-			</div>
+			</div><!--End of column-middle-->
 
 			<div class="col-right" style="border-bottom: 2px solid black;">
 			</div>			
