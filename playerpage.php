@@ -46,5 +46,4 @@
 		<footer>Footer - eSports Links and Info</footer>
 	</div>
 </body>
-
 </html>
