@@ -10,7 +10,7 @@
 <body>
 	<div class="col-2">
 		<header>
-			<div id = "nav-bar">
+			<div id = "nav-bar"><!--Beginging of nav-bar-->
 				<img class = "team-logo" src="#" alt = "team-logo"/>
 				<ul id="nav-bar-links">
 					<li><a href="#">Blog</a></li>
