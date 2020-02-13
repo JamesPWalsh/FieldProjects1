@@ -3,14 +3,14 @@
 <!-- James Walsh 01/16/2020 -->
 <!--Last Updated: 01/16/2020-->
 <head>
-<link rel="stylesheet" href="css/editplayer.css">
+<link rel="stylesheet" href="css/editgame.css">
 <title>IHCC ESports - Leader Page</title>
 </head>
 
 <body>
 	<div class="col-2">
 		<header>
-			<div id = "nav-bar">
+			<div id = "nav-bar"><!--Beginging of nav-bar-->
 				<img class = "team-logo" src="#" alt = "team-logo"/>
 				<ul id="nav-bar-links">
 					<li><a href="#">Blog</a></li>
@@ -22,23 +22,19 @@
 			</div><!--End of nav-bar-->
 		</header>
 		
-		<h3>Edit Player Information</h3>
-		Username: <input type="text" name="username"><br>
-		E-mail: <input type="text" name="email"><br>
-		Phone Number: <input type="text" name="phone"><br>
-		Favorite Game: <input type="text" name="favgame"><br>
-		Bio: <input type="text" name="bio"><br>
-		
+		<h3>Edit Game Information</h3>
+		Game Name: <input type="text" name="username"><br>
+		Game Description: <input type="text" name="email"><br>
+
 		<form action="leaderpage.php">
-			<input id="button1" type="submit" value="Confirm Edit" />
+			<input id="btnsubmit" type="submit" value="Confirm Edit" />
 		</form>
 		<br>
 		<form action="leaderpage.php">
-			<input id="button2" type="submit" value="Cancel" />
+			<input id="btncancel" type="submit" value="Cancel" />
 		</form>
 		
 		<footer>Footer - eSports Links and Info</footer>
-	</div>
 </body>
 
 </html>
