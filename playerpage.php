@@ -10,6 +10,7 @@
 <body>
 	<div class="col-2">
 		<header>
+		<!--Begining Of nav-bar-->
 			<div id = "nav-bar">
 				<img class = "team-logo" src="#" alt = "team-logo"/>
 				<ul id="nav-bar-links">
@@ -23,6 +24,7 @@
 		</header>
 
 		<div class="row">
+			<!--Begining of column-left-->
 			<div class="column left">
 				<img src="images/img_player.jpg" alt="Profile Picture" class="player-img">
 				<div class="info">
@@ -33,6 +35,8 @@
 					<h4>Schedule</h4>
 				</div>
 			</div>
+			<!--End of column-left-->
+			<!--Begining of column-right-->
 			<div class="column right">
 				<div class="stroke">
 				<h2>Player's Name</h2>
@@ -41,6 +45,7 @@
 				<h3>Player Ranking</h3>
 				</div>
 			</div>
+			<!--End of column-right-->
 		</div>
 
 		<footer>Footer - eSports Links and Info</footer>

@@ -1,10 +1,10 @@
-/* --- Main Page Structure Layout ---------------------------------------------------------------------------------------------------*/ 
+/* --- Main Page Structure Layout ---------------------------------------------------------------------------------------------------*/
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
   }
 
   body {
-	font-family: Gotham-Narrow, Clio; 
+	font-family: Gotham-Narrow, Clio;
     display: flex;
     min-height: 100vh;
     flex-direction: row;
@@ -21,6 +21,7 @@
   }
   .content > article {
     flex: 4;
+    padding: 2px;
     min-height: 60vh;
   }
   header, footer {
@@ -31,7 +32,15 @@
     padding: 1em;
   }
 
-/* --- Nav-Bar Formatting -----------------------------------------------------------------------------------------------------*/ 
+  footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+  }
+
+/* --- Nav-Bar Formatting -----------------------------------------------------------------------------------------------------*/
   .team-logo {
 	display: inline;
 	float: left;
@@ -80,7 +89,7 @@
 	border: white solid 2px;
 	background-color: #FAA41A;
   }
-/* --- Main Article Content ---------------------------------------------------------------------------------------------------*/ 
+/* --- Main Article Content ---------------------------------------------------------------------------------------------------*/
 
 .about {
 	padding-top: 15px;
@@ -107,7 +116,7 @@
   background-color: #FAA41A;
 }
 
-/* --- Profile Cards Formatting -----------------------------------------------------------------------------------------------*/ 
+/* --- Profile Cards Formatting -----------------------------------------------------------------------------------------------*/
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -115,7 +124,7 @@
   text-align: center;
   font-family: arial;
   margin: 0 auto;
-  width: 300px; 
+  width: 300px;
   border: red 1px solid;
 }
 
@@ -137,17 +146,12 @@
   font-size: 18px;
 }
 
-.player-button a {
+a {
   text-decoration: none;
   font-size: 22px;
   color: black;
 }
 
-.player-button:hover, .player-button a:hover {
+.player-button:hover, a:hover {
   opacity: 0.7;
 }
-
-
-
-
-
