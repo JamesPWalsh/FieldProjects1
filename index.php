@@ -10,8 +10,42 @@
 			- Added Team Profile Cards under Meet the Teams article
 			- Added Comments to Main-Styles Stylesheet
 			- Added Comments to Body
+			- Added About Page to Nav-bar and about button
 -->
 <html lang="en-US">
+<?php
+	//if reloaded, get variable, else set first in table
+	if(isset($_GET['name']))
+	{
+		$search = htmlspecialchars($_GET["name"]);
+		include "php/database.php";
+		// Create connection
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		// Check connection
+		if ($conn->connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
+
+		$sql = "SELECT * FROM players WHERE game_name = '".$search."'";
+		$result = $conn->query($sql);
+	} else {
+		$search = "Overwatch";
+		include "php/database.php";
+		// Create connection
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		// Check connection
+		if ($conn->connect_error) {
+			die("Connection failed: " . $conn->connect_error);
+		}
+		$sql = "SELECT game_name FROM games";
+		$result = $conn->query($sql);
+		$row = $result->fetch_assoc();
+		$search = $row["game_name"];
+
+		$sql = "SELECT * FROM players WHERE game_name = '".$search."'";
+		$result = $conn->query($sql);
+	}
+	?>
 <head>
 	<title>Indian Hills eSports</title>
 </head>
@@ -27,9 +61,10 @@
 				<ul id="nav-bar-links">
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Events</a></li>
-					<li><a href="team-page.html">Teams</a></li>
+					<li><a href="updatedTeamPage.php">Teams</a></li>
 					<li><a href="about-page.html">About</a></li>
 					<li><a class="active" href="index.html">Home</a></li>
+					<a href=""></a>
 				</ul>
 			</div><!--End of nav-bar-->
 		</header>
@@ -111,7 +146,7 @@
 					aperiri intellegat sea, ut eum mutat altera principes. Te sit quaeque oportere, has modus inani ceteros ad. Impedit blandit deseruisse duo ea, ne graecis
 					deleniti incorrupte usu. Ut mei splendide accommodare. An pri iisque meliore. In his meis porro viris, illud imperdiet reprimique et vim. Feugiat atomorum
 					reprehendunt vix ei pri.</p>
-					<a href="#"><button class="about-button">Read More</button></a>
+					<a href="about-page.html"><button class="about-button">Read More</button></a>
 				</center>
 			</article>
 		</main>
@@ -119,85 +154,12 @@
 		<!-- Team Profile Cards -->
 		<main class="content">
 			<article class="team-profile-container">
-				<h2 style="color:white;">Meet the Teams</h2>
+				<h2 style="color:white;">Meet the Leaders</h2>
 
 				<!--View Teams Members by Game Buttons-->
-				<div class = "game-list">
-					<button class="game">Overwatch</button>
-					<button class="game">CS:GO</button>
-					<button class="game">Rocket League</button>
-					<button class="game">Super Smash Bros</button>
-				</div> <!-- End of Team Buttons -->
-
+				<div class = "team-list">
 				<!-- Team List with Player Profiles-->
-				<div class="team-list">
-					<!-- Player Profile Card -->
-					<div class="card">
-						<!--Player Profile Image-->
-					  <img src="#" alt="Player-Pic" style="width:100%">
-					  <h1>Player Name</h1>
-					  <p class="title">Player Username</p>
-					  <p>Player Bio</p>
-						<!--Player Links-->
-					  <div style="margin: 24px 0;">
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-							<a href="#"><i class="fa fa-facebook"></i></a>
-					  </div><!--End of Player Links-->
-					  <p><a href="playerpage.html"><button class="player-button">View Profile</button></a></p>
-					</div><!-- End of Player Profile Card -->
-
-					<!-- Player Profile Card -->
-					<div class="card">
-						<!--Player Profile Image-->
-					  <img src="#" alt="Player-Pic" style="width:100%">
-					  <h1>Player Name</h1>
-					  <p class="title">Player Username</p>
-					  <p>Player Bio</p>
-						<!--Player Links-->
-					  <div style="margin: 24px 0;">
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-							<a href="#"><i class="fa fa-facebook"></i></a>
-					  </div><!--End of Player Links-->
-					  <p><a href="playerpage.html"><button class="player-button">View Profile</button></a></p>
-					</div><!-- End of Player Profile Card -->
-
-					<!-- Player Profile Card -->
-					<div class="card">
-						<!--Player Profile Image-->
-					  <img src="#" alt="Player-Pic" style="width:100%">
-					  <h1>Player Name</h1>
-					  <p class="title">Player Username</p>
-					  <p>Player Bio</p>
-						<!--Player Links-->
-					  <div style="margin: 24px 0;">
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-							<a href="#"><i class="fa fa-facebook"></i></a>
-					  </div><!--End of Player Links-->
-					  <p><a href="playerpage.html"><button class="player-button">View Profile</button></a></p>
-					</div><!-- End of Player Profile Card -->
-
-					<!-- Player Profile Card -->
-					<div class="card">
-						<!--Player Profile Image-->
-					  <img src="#" alt="Player-Pic" style="width:100%">
-					  <h1>Player Name</h1>
-					  <p class="title">Player Username</p>
-					  <p>Player Bio</p>
-						<!--Player Links-->
-					  <div style="margin: 24px 0;">
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-							<a href="#"><i class="fa fa-facebook"></i></a>
-					  </div><!--End of Player Links-->
-					  <p><a href="playerpage.html"><button class="player-button">View Profile</button></a></p>
-					</div><!--End of Player Profile Card -->
+				<?php include "php/leaderCards.php"; //this prints just the leaders?>
 				</div><!--End of Team List-->
 			</article>
 		</main> <!-- End of Team Profile Cards -->
